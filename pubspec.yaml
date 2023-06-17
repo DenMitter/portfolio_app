@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
   go_router: ^8.0.2
   flutter_downloader: ^1.6.0
-  path_provider_ex: ^2.2.0
+  path_provider: ^2.0.5
 
 dev_dependencies:
   flutter_test:

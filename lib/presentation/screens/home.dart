@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
-import 'package:path_provider_ex/path_provider_ex.dart';
+import 'package:path_provider/path_provider.dart';
 
 void downloadArchive(String url) async {
   var temporaryDir = await getTemporaryDirectory();
@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(     
-      backgroundColor: Color.fromARGB(255, 209, 229, 255),
+      backgroundColor: const Color(0xFFD1E5FF),
       // appBar: AppBar(
       //   title: const Text("Portfolio APP", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold,)),
       //   backgroundColor: const Color(0x00FFFFFF),
@@ -100,7 +100,7 @@ class HomeScreen extends StatelessWidget {
                                             style: TextStyle(
                                               fontSize: 18, 
                                               fontWeight: FontWeight.bold, 
-                                              color: Color.fromARGB(255, 83, 172, 255), 
+                                              color: Color(0xFF53ACFF), 
                                             ),
                                             textAlign: TextAlign.left,
                                           ),
@@ -118,7 +118,7 @@ class HomeScreen extends StatelessWidget {
                               width: 205.0,
                               height: 158.0,
                               decoration: const BoxDecoration(
-                                color: Color.fromARGB(255, 255, 246, 202),
+                                color: Color(0xFFFFF6CA),
                                 borderRadius: BorderRadius.all(Radius.circular(16)),
                               ),
                               child: const Row(
@@ -207,7 +207,7 @@ class HomeScreen extends StatelessWidget {
                             child: ElevatedButton(
                               onPressed: () {downloadArchive('https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1PBVWVOBeMlSzBmyEjJElCA77kJCCGjjK');}, 
                               // ignore: sort_child_properties_last
-                              child: const Text('Завантажити проект ( Front-end )', style: TextStyle(fontSize: 18, color: Color.fromARGB(255, 7, 7, 7)),),
+                              child: const Text('Завантажити проект ( Front-end )', style: TextStyle(fontSize: 18, color: Color(0xFF070707)),),
                               style: ElevatedButton.styleFrom(
                                 fixedSize: const Size(430, 50),
                                 shape: RoundedRectangleBorder(
@@ -223,7 +223,7 @@ class HomeScreen extends StatelessWidget {
                             child: ElevatedButton(
                               onPressed: () {downloadArchive('https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1eGxbbsdn5wDMjT6eGYXoPMYTADLIFb_l');}, 
                               // ignore: sort_child_properties_last
-                              child: const Text('Завантажити проект ( Python )', style: TextStyle(fontSize: 18, color: Color.fromARGB(255, 7, 7, 7)),),
+                              child: const Text('Завантажити проект ( Python )', style: TextStyle(fontSize: 18, color: Color(0xFF070707)),),
                               style: ElevatedButton.styleFrom(
                                 fixedSize: const Size(430, 50),
                                 shape: RoundedRectangleBorder(
